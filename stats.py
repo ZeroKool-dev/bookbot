@@ -41,8 +41,19 @@ def sort_char_count(char_count):
     Returns:
         list: A list of tuples sorted by count in descending order.
     """
-    char = {}
     for char in list(char_count.keys()):
         if not char.isalpha():
             del char_count[char]
     return sorted(char_count.items(), key=lambda item: item[1], reverse=True)
+
+def print_char_count(sorted_char_count):
+    """
+    Prints the character counts in a formatted manner.
+
+    Parameters:
+        sorted_char_count (list): A list of tuples with characters and their counts.
+    """
+    lines = []
+    for char, count in sorted_char_count:
+        lines.append(f"{char}: {count}")
+    return "\n".join(lines)
