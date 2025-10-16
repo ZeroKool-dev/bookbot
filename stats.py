@@ -30,3 +30,16 @@ def get_num_characters(text):
             else:
                 char_count[char] = 1
     return char_count
+
+def sort_char_count(char_count):
+    """
+    Sorts a character count dictionary by frequency in descending order.
+
+    Parameters:
+        char_count (dict): A dictionary with characters as keys and their counts as values.
+
+    Returns:
+        list: A list of tuples sorted by count in descending order.
+    """
+    #char_count.sort(reverse=True,key=sort_on)
+    return sorted(char_count.items(), key=lambda item: item[1], reverse=True)
