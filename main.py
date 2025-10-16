@@ -25,9 +25,10 @@ def main():
     num_words = get_num_words(book_text)
     num_characters = get_num_characters(book_text)
     sorted_char_count = sort_char_count(num_characters)
-    print(f"Found {num_characters} total characters")
-    print(f"Found {num_words} total words")
-    print(sorted_char_count)
+    #print(f"Found {num_characters} total characters")
+    print(f"============ BOOKBOT ============\nAnalyzing book found at {filepath}...")
+    print(f"----------- Word Count ----------\nFound {num_words} total words")
+    print(f"--------- Character Count -------\n{sorted_char_count}")
 
 
 if __name__ == '__main__':
