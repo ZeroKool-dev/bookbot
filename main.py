@@ -24,7 +24,7 @@ def main():
     and prints it to the console.
     """
     if len(sys.argv) < 2:
-        print("Usage: python main.py <path_to_book>")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     filepath = sys.argv[1]
     #filepath = 'books/frankenstein.txt'  # Example relative path
